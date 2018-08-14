@@ -19,6 +19,8 @@
 		224113512123194000198C47 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224113502123194000198C47 /* MyPageViewController.swift */; };
 		2241135321231BF300198C47 /* UpdateMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241135221231BF300198C47 /* UpdateMyPageViewController.swift */; };
 		2241135521231CB100198C47 /* BoardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241135421231CB100198C47 /* BoardDetailViewController.swift */; };
+		CE8942B821232B83003173D0 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8942B721232B83003173D0 /* MyPage.storyboard */; };
+		CE8942BA21232B8F003173D0 /* Board.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8942B921232B8F003173D0 /* Board.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		224113502123194000198C47 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		2241135221231BF300198C47 /* UpdateMyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMyPageViewController.swift; sourceTree = "<group>"; };
 		2241135421231CB100198C47 /* BoardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailViewController.swift; sourceTree = "<group>"; };
+		CE8942B721232B83003173D0 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		CE8942B921232B8F003173D0 /* Board.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Board.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,28 +72,15 @@
 		224113312122FEAD00198C47 /* Frage */ = {
 			isa = PBXGroup;
 			children = (
-				224113322122FEAD00198C47 /* AppDelegate.swift */,
-				224113442122FEB500198C47 /* ViewController */,
-				224113452122FEC000198C47 /* Storyboard */,
+				CE8942AE21232AD7003173D0 /* Application */,
+				CE8942AF21232ADD003173D0 /* Asset */,
 				224113392122FEAE00198C47 /* Assets.xcassets */,
-				2241133E2122FEAE00198C47 /* Info.plist */,
+				CE8942B121232AE6003173D0 /* Model */,
+				CE8942B221232AEA003173D0 /* Module */,
+				224113452122FEC000198C47 /* Storyboard */,
+				CE8942B021232AE3003173D0 /* View */,
 			);
 			path = Frage;
-			sourceTree = "<group>";
-		};
-		224113442122FEB500198C47 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				224113342122FEAD00198C47 /* LoginViewController.swift */,
-				2241134621230AA900198C47 /* JoinViewController.swift */,
-				2241134821230DB800198C47 /* BoardViewController.swift */,
-				2241134A2123126C00198C47 /* BoardTableViewCell.swift */,
-				2241134C2123138A00198C47 /* WriteViewController.swift */,
-				2241135421231CB100198C47 /* BoardDetailViewController.swift */,
-				224113502123194000198C47 /* MyPageViewController.swift */,
-				2241135221231BF300198C47 /* UpdateMyPageViewController.swift */,
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		224113452122FEC000198C47 /* Storyboard */ = {
@@ -99,6 +90,85 @@
 				2241133B2122FEAE00198C47 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CE8942AE21232AD7003173D0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2241133E2122FEAE00198C47 /* Info.plist */,
+				224113322122FEAD00198C47 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CE8942AF21232ADD003173D0 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		CE8942B021232AE3003173D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE8942B621232B32003173D0 /* MyPage */,
+				CE8942B521232B29003173D0 /* Board */,
+				CE8942B421232B23003173D0 /* Join */,
+				CE8942B321232B03003173D0 /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE8942B121232AE6003173D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE8942B221232AEA003173D0 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		CE8942B321232B03003173D0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				224113342122FEAD00198C47 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CE8942B421232B23003173D0 /* Join */ = {
+			isa = PBXGroup;
+			children = (
+				2241134621230AA900198C47 /* JoinViewController.swift */,
+			);
+			path = Join;
+			sourceTree = "<group>";
+		};
+		CE8942B521232B29003173D0 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				2241134C2123138A00198C47 /* WriteViewController.swift */,
+				2241135421231CB100198C47 /* BoardDetailViewController.swift */,
+				2241134821230DB800198C47 /* BoardViewController.swift */,
+				2241134A2123126C00198C47 /* BoardTableViewCell.swift */,
+				CE8942B921232B8F003173D0 /* Board.storyboard */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		CE8942B621232B32003173D0 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				224113502123194000198C47 /* MyPageViewController.swift */,
+				2241135221231BF300198C47 /* UpdateMyPageViewController.swift */,
+				CE8942B721232B83003173D0 /* MyPage.storyboard */,
+			);
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,8 +230,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2241133D2122FEAE00198C47 /* LaunchScreen.storyboard in Resources */,
+				CE8942BA21232B8F003173D0 /* Board.storyboard in Resources */,
 				2241133A2122FEAE00198C47 /* Assets.xcassets in Resources */,
 				224113382122FEAD00198C47 /* Main.storyboard in Resources */,
+				CE8942B821232B83003173D0 /* MyPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Frage/Info.plist;
+				INFOPLIST_FILE = Frage/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,7 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Frage/Info.plist;
+				INFOPLIST_FILE = Frage/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
