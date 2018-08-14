@@ -29,12 +29,7 @@ class LoginViewController: UIViewController {
         
     }
     
-    //MARK: 회원가입
-    @IBAction func JoinAction(_ sender: UIButton) {
-        
 
-    }
-    
     
 }
 
