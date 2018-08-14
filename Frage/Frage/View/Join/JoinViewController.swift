@@ -34,7 +34,16 @@ class JoinViewController: UIViewController, APIService{
     
     //MARK: 회원가입 액션
     @IBAction func joinAction(_ sender: Any) {
-        signUp()
+        
+        if nicknameTextField.text == "" || idTextField.text == "" || pwdTextField.text == "" || partTextField.text == "" || introTextView.text == "" {
+                let alertView = UIAlertController(title: "회원가입 실패", message: "모든 항목을 입력해주세요.", preferredStyle: .alert)
+                let ok = UIAlertAction(title: "확인", style: .default, handler: nil)
+                alertView.addAction(ok)
+                self.present(alertView, animated: true, completion: nil)
+        }
+        else {
+            signUp()
+        }
     }
     
     func signUp(){

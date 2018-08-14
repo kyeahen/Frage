@@ -26,7 +26,16 @@ class LoginViewController: UIViewController {
 
     //MARK: 로그인
     @IBAction func LoginAction(_ sender: UIButton) {
-        login()
+        
+        if idTextField.text == "" || pwdTextField.text == "" {
+            let alertView = UIAlertController(title: "로그인 실패", message: "모든 항목을 입력해주세요..", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "확인", style: .default, handler: nil)
+            alertView.addAction(ok)
+            self.present(alertView, animated: true, completion: nil)
+        }
+        else {
+            login()
+        }
     }
     
     func login() {
