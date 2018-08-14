@@ -16,6 +16,9 @@
 		2241134921230DB800198C47 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241134821230DB800198C47 /* BoardViewController.swift */; };
 		2241134B2123126C00198C47 /* BoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241134A2123126C00198C47 /* BoardTableViewCell.swift */; };
 		2241134D2123138A00198C47 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241134C2123138A00198C47 /* WriteViewController.swift */; };
+		224113512123194000198C47 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224113502123194000198C47 /* MyPageViewController.swift */; };
+		2241135321231BF300198C47 /* UpdateMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241135221231BF300198C47 /* UpdateMyPageViewController.swift */; };
+		2241135521231CB100198C47 /* BoardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241135421231CB100198C47 /* BoardDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		2241134821230DB800198C47 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 		2241134A2123126C00198C47 /* BoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTableViewCell.swift; sourceTree = "<group>"; };
 		2241134C2123138A00198C47 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		224113502123194000198C47 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		2241135221231BF300198C47 /* UpdateMyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMyPageViewController.swift; sourceTree = "<group>"; };
+		2241135421231CB100198C47 /* BoardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 				2241134821230DB800198C47 /* BoardViewController.swift */,
 				2241134A2123126C00198C47 /* BoardTableViewCell.swift */,
 				2241134C2123138A00198C47 /* WriteViewController.swift */,
+				2241135421231CB100198C47 /* BoardDetailViewController.swift */,
+				224113502123194000198C47 /* MyPageViewController.swift */,
+				2241135221231BF300198C47 /* UpdateMyPageViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -163,9 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2241135321231BF300198C47 /* UpdateMyPageViewController.swift in Sources */,
 				2241134D2123138A00198C47 /* WriteViewController.swift in Sources */,
 				2241134B2123126C00198C47 /* BoardTableViewCell.swift in Sources */,
+				224113512123194000198C47 /* MyPageViewController.swift in Sources */,
 				224113352122FEAD00198C47 /* LoginViewController.swift in Sources */,
+				2241135521231CB100198C47 /* BoardDetailViewController.swift in Sources */,
 				2241134721230AA900198C47 /* JoinViewController.swift in Sources */,
 				224113332122FEAD00198C47 /* AppDelegate.swift in Sources */,
 				2241134921230DB800198C47 /* BoardViewController.swift in Sources */,
