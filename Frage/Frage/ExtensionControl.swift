@@ -20,7 +20,6 @@ extension UIViewController {
     
 }
 
-
 extension NSObject {
     static var reuseIdentifier: String { //스토리보드 idetifier
         return String(describing: self)

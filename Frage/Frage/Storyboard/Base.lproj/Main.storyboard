@@ -294,6 +294,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="idTextField" destination="49R-IB-Puu" id="gGc-5I-SDi"/>
+                        <outlet property="imageView" destination="CVv-AJ-IkJ" id="2ey-uK-pX4"/>
                         <outlet property="introTextView" destination="ScF-qR-GSW" id="b4V-G1-kRc"/>
                         <outlet property="nicknameTextField" destination="3vo-6s-jVh" id="Vq1-Wj-pU3"/>
                         <outlet property="partTextField" destination="aAa-kZ-jg2" id="y4J-M5-UTa"/>

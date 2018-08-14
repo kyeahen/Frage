@@ -15,6 +15,7 @@ class JoinViewController: UIViewController, APIService{
     @IBOutlet weak var pwdTextField: UITextField!
     @IBOutlet weak var partTextField: UITextField!
     @IBOutlet weak var introTextView: UITextView!
+    @IBOutlet weak var imageView: UIImageView!
     
     let pickerView = UIPickerView()
     var partArr = ["product manager", "designer", "developer"]
@@ -23,6 +24,9 @@ class JoinViewController: UIViewController, APIService{
         super.viewDidLoad()
         
         initPicker()
+        
+        imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = imageView.layer.frame.width/2
 
         // Do any additional setup after loading the view.
     }
