@@ -193,7 +193,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ZXr-Eu-TEX">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ick-7L-cCR" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="BoardNaviVC" automaticallyAdjustsScrollViewInsets="NO" id="ick-7L-cCR" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="B39-vy-cIs"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
