@@ -21,6 +21,7 @@
 		2241135521231CB100198C47 /* BoardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241135421231CB100198C47 /* BoardDetailViewController.swift */; };
 		CE8942B821232B83003173D0 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8942B721232B83003173D0 /* MyPage.storyboard */; };
 		CE8942BA21232B8F003173D0 /* Board.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8942B921232B8F003173D0 /* Board.storyboard */; };
+		CEE65BBC212332AA003BC904 /* BoardDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE65BBB212332AA003BC904 /* BoardDetail.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		2241135421231CB100198C47 /* BoardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailViewController.swift; sourceTree = "<group>"; };
 		CE8942B721232B83003173D0 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		CE8942B921232B8F003173D0 /* Board.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Board.storyboard; sourceTree = "<group>"; };
+		CEE65BBB212332AA003BC904 /* BoardDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BoardDetail.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				CE8942B921232B8F003173D0 /* Board.storyboard */,
+				CEE65BBB212332AA003BC904 /* BoardDetail.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				CE8942BA21232B8F003173D0 /* Board.storyboard in Resources */,
 				2241133A2122FEAE00198C47 /* Assets.xcassets in Resources */,
 				224113382122FEAD00198C47 /* Main.storyboard in Resources */,
+				CEE65BBC212332AA003BC904 /* BoardDetail.storyboard in Resources */,
 				CE8942B821232B83003173D0 /* MyPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
