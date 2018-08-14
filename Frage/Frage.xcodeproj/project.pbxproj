@@ -80,7 +80,6 @@
 			children = (
 				CE8942AE21232AD7003173D0 /* Application */,
 				CE8942AF21232ADD003173D0 /* Asset */,
-				224113392122FEAE00198C47 /* Assets.xcassets */,
 				CE8942B121232AE6003173D0 /* Model */,
 				CE8942B221232AEA003173D0 /* Module */,
 				224113452122FEC000198C47 /* Storyboard */,
@@ -110,6 +109,7 @@
 		CE8942AF21232ADD003173D0 /* Asset */ = {
 			isa = PBXGroup;
 			children = (
+				224113392122FEAE00198C47 /* Assets.xcassets */,
 			);
 			path = Asset;
 			sourceTree = "<group>";

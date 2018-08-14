@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -444,11 +443,11 @@
             </objects>
             <point key="canvasLocation" x="1428" y="2317"/>
         </scene>
-        <!--MyPage-->
+        <!--Navigation Controller-->
         <scene sceneID="EJB-Kq-21u">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7SD-Lw-N7X" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="MyPage" id="wNf-qz-zuE"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="wNf-qz-zuE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k2M-Xa-cby">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
