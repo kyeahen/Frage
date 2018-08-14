@@ -20,6 +20,9 @@
 		2241135321231BF300198C47 /* UpdateMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241135221231BF300198C47 /* UpdateMyPageViewController.swift */; };
 		2241135521231CB100198C47 /* BoardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241135421231CB100198C47 /* BoardDetailViewController.swift */; };
 		22DC270121234DF100D6A254 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC270021234DF100D6A254 /* APIService.swift */; };
+		22DC27032123555000D6A254 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC27022123555000D6A254 /* SignUp.swift */; };
+		22DC2705212355E500D6A254 /* SignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC2704212355E500D6A254 /* SignService.swift */; };
+		22DC27072123593600D6A254 /* ExtensionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC27062123593600D6A254 /* ExtensionControl.swift */; };
 		CE8942B821232B83003173D0 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8942B721232B83003173D0 /* MyPage.storyboard */; };
 		CE8942BA21232B8F003173D0 /* Board.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8942B921232B8F003173D0 /* Board.storyboard */; };
 		CEE65BBC212332AA003BC904 /* BoardDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE65BBB212332AA003BC904 /* BoardDetail.storyboard */; };
@@ -43,6 +46,9 @@
 		2241135221231BF300198C47 /* UpdateMyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMyPageViewController.swift; sourceTree = "<group>"; };
 		2241135421231CB100198C47 /* BoardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailViewController.swift; sourceTree = "<group>"; };
 		22DC270021234DF100D6A254 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		22DC27022123555000D6A254 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		22DC2704212355E500D6A254 /* SignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignService.swift; sourceTree = "<group>"; };
+		22DC27062123593600D6A254 /* ExtensionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionControl.swift; sourceTree = "<group>"; };
 		234E2BB16CCBDF5CF00C8E22 /* Pods-Frage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frage.release.xcconfig"; path = "Pods/Target Support Files/Pods-Frage/Pods-Frage.release.xcconfig"; sourceTree = "<group>"; };
 		BA81A93D33D7879B7392E6BB /* Pods_Frage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Frage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9096BC320BAEDAF45C2C782 /* Pods-Frage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Frage/Pods-Frage.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +108,7 @@
 				CE8942B221232AEA003173D0 /* Module */,
 				224113452122FEC000198C47 /* Storyboard */,
 				CE8942B021232AE3003173D0 /* View */,
+				22DC27062123593600D6A254 /* ExtensionControl.swift */,
 			);
 			path = Frage;
 			sourceTree = "<group>";
@@ -155,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				CEE65BBD212338B1003BC904 /* Frage.swift */,
+				22DC27022123555000D6A254 /* SignUp.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +172,7 @@
 			children = (
 				CEE65BBF212338D8003BC904 /* Result.swift */,
 				22DC270021234DF100D6A254 /* APIService.swift */,
+				22DC2704212355E500D6A254 /* SignService.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -352,13 +361,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22DC2705212355E500D6A254 /* SignService.swift in Sources */,
 				2241135321231BF300198C47 /* UpdateMyPageViewController.swift in Sources */,
 				CEE65BC321234BCA003BC904 /* PostFrageViewController.swift in Sources */,
 				2241134B2123126C00198C47 /* BoardTableViewCell.swift in Sources */,
 				224113512123194000198C47 /* MyPageViewController.swift in Sources */,
+				22DC27032123555000D6A254 /* SignUp.swift in Sources */,
 				224113352122FEAD00198C47 /* LoginViewController.swift in Sources */,
 				CEE65BBE212338B1003BC904 /* Frage.swift in Sources */,
 				2241135521231CB100198C47 /* BoardDetailViewController.swift in Sources */,
+				22DC27072123593600D6A254 /* ExtensionControl.swift in Sources */,
 				2241134721230AA900198C47 /* JoinViewController.swift in Sources */,
 				224113332122FEAD00198C47 /* AppDelegate.swift in Sources */,
 				2241134921230DB800198C47 /* BoardViewController.swift in Sources */,
@@ -511,7 +523,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23EFP3FERN;
 				INFOPLIST_FILE = Frage/Application/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.develop.yeen.Frage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -527,7 +542,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23EFP3FERN;
 				INFOPLIST_FILE = Frage/Application/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.develop.yeen.Frage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
