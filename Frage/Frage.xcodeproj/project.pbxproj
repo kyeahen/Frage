@@ -18,6 +18,7 @@
 		224113512123194000198C47 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224113502123194000198C47 /* MyPageViewController.swift */; };
 		2241135321231BF300198C47 /* UpdateMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241135221231BF300198C47 /* UpdateMyPageViewController.swift */; };
 		2241135521231CB100198C47 /* BoardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241135421231CB100198C47 /* BoardDetailViewController.swift */; };
+		22DC270121234DF100D6A254 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC270021234DF100D6A254 /* APIService.swift */; };
 		CE8942B821232B83003173D0 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8942B721232B83003173D0 /* MyPage.storyboard */; };
 		CE8942BA21232B8F003173D0 /* Board.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8942B921232B8F003173D0 /* Board.storyboard */; };
 		CEE65BBC212332AA003BC904 /* BoardDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE65BBB212332AA003BC904 /* BoardDetail.storyboard */; };
@@ -40,6 +41,7 @@
 		224113502123194000198C47 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		2241135221231BF300198C47 /* UpdateMyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMyPageViewController.swift; sourceTree = "<group>"; };
 		2241135421231CB100198C47 /* BoardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailViewController.swift; sourceTree = "<group>"; };
+		22DC270021234DF100D6A254 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		CE8942B721232B83003173D0 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		CE8942B921232B8F003173D0 /* Board.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Board.storyboard; sourceTree = "<group>"; };
 		CEE65BBB212332AA003BC904 /* BoardDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BoardDetail.storyboard; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				CEE65BBF212338D8003BC904 /* Result.swift */,
+				22DC270021234DF100D6A254 /* APIService.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				2241134721230AA900198C47 /* JoinViewController.swift in Sources */,
 				224113332122FEAD00198C47 /* AppDelegate.swift in Sources */,
 				2241134921230DB800198C47 /* BoardViewController.swift in Sources */,
+				22DC270121234DF100D6A254 /* APIService.swift in Sources */,
 				CEE65BC0212338D8003BC904 /* Result.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

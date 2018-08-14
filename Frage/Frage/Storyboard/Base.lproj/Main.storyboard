@@ -102,7 +102,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RHd-C7-d3L">
                                 <rect key="frame" x="0.0" y="64" width="375" height="155"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CVv-AJ-IkJ">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1024" translatesAutoresizingMaskIntoConstraints="NO" id="CVv-AJ-IkJ">
                                         <rect key="frame" x="137" y="27" width="100" height="100"/>
                                         <color key="backgroundColor" red="0.8980392157" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -111,7 +111,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.8980392157" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="CVv-AJ-IkJ" firstAttribute="centerX" secondItem="RHd-C7-d3L" secondAttribute="centerX" id="aDc-Un-cTB"/>
                                     <constraint firstItem="CVv-AJ-IkJ" firstAttribute="centerY" secondItem="RHd-C7-d3L" secondAttribute="centerY" id="vKw-0u-32G"/>
