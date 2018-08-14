@@ -22,6 +22,8 @@
 		CE8942B821232B83003173D0 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8942B721232B83003173D0 /* MyPage.storyboard */; };
 		CE8942BA21232B8F003173D0 /* Board.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8942B921232B8F003173D0 /* Board.storyboard */; };
 		CEE65BBC212332AA003BC904 /* BoardDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE65BBB212332AA003BC904 /* BoardDetail.storyboard */; };
+		CEE65BBE212338B1003BC904 /* Frage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE65BBD212338B1003BC904 /* Frage.swift */; };
+		CEE65BC0212338D8003BC904 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE65BBF212338D8003BC904 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		CE8942B721232B83003173D0 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		CE8942B921232B8F003173D0 /* Board.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Board.storyboard; sourceTree = "<group>"; };
 		CEE65BBB212332AA003BC904 /* BoardDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BoardDetail.storyboard; sourceTree = "<group>"; };
+		CEE65BBD212338B1003BC904 /* Frage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frage.swift; sourceTree = "<group>"; };
+		CEE65BBF212338D8003BC904 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 		CE8942B121232AE6003173D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CEE65BBD212338B1003BC904 /* Frage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 		CE8942B221232AEA003173D0 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				CEE65BBF212338D8003BC904 /* Result.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -269,10 +275,12 @@
 				2241134B2123126C00198C47 /* BoardTableViewCell.swift in Sources */,
 				224113512123194000198C47 /* MyPageViewController.swift in Sources */,
 				224113352122FEAD00198C47 /* LoginViewController.swift in Sources */,
+				CEE65BBE212338B1003BC904 /* Frage.swift in Sources */,
 				2241135521231CB100198C47 /* BoardDetailViewController.swift in Sources */,
 				2241134721230AA900198C47 /* JoinViewController.swift in Sources */,
 				224113332122FEAD00198C47 /* AppDelegate.swift in Sources */,
 				2241134921230DB800198C47 /* BoardViewController.swift in Sources */,
+				CEE65BC0212338D8003BC904 /* Result.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -403,7 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -417,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23EFP3FERN;
 				INFOPLIST_FILE = Frage/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -434,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23EFP3FERN;
 				INFOPLIST_FILE = Frage/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -10,6 +10,11 @@ import UIKit
 
 class BoardTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var authorNameLabel: UILabel!
+    @IBOutlet weak var authorTypeLabel: UILabel!
+    @IBOutlet weak var contentsLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +25,10 @@ class BoardTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    public func updateViews(with frage: Frage) {
+        authorNameLabel.text = frage.author.name
+        authorTypeLabel.text = frage.author.authorType
+        contentsLabel.text = frage.contents
+    }
 }

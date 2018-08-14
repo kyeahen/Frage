@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -335,7 +334,7 @@
         <scene sceneID="Ods-QE-Oi7">
             <objects>
                 <viewControllerPlaceholder storyboardName="Board" id="kBy-dz-web" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Z6I-6Y-ECb"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="Z6I-6Y-ECb"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ioF-VH-pNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -345,7 +344,7 @@
         <scene sceneID="u8z-CN-ogf">
             <objects>
                 <viewControllerPlaceholder storyboardName="MyPage" id="218-Ld-aDh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="wwU-0r-SX0"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="wwU-0r-SX0"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="53y-Id-JZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
