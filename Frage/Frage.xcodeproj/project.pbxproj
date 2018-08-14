@@ -152,11 +152,11 @@
 		CE8942B521232B29003173D0 /* Board */ = {
 			isa = PBXGroup;
 			children = (
+				CE8942BC21232CBF003173D0 /* Storyboard */,
 				2241134C2123138A00198C47 /* WriteViewController.swift */,
 				2241135421231CB100198C47 /* BoardDetailViewController.swift */,
 				2241134821230DB800198C47 /* BoardViewController.swift */,
 				2241134A2123126C00198C47 /* BoardTableViewCell.swift */,
-				CE8942B921232B8F003173D0 /* Board.storyboard */,
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -164,11 +164,27 @@
 		CE8942B621232B32003173D0 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				CE8942BB21232CB9003173D0 /* Storyboard */,
 				224113502123194000198C47 /* MyPageViewController.swift */,
 				2241135221231BF300198C47 /* UpdateMyPageViewController.swift */,
-				CE8942B721232B83003173D0 /* MyPage.storyboard */,
 			);
 			path = MyPage;
+			sourceTree = "<group>";
+		};
+		CE8942BB21232CB9003173D0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CE8942B721232B83003173D0 /* MyPage.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CE8942BC21232CBF003173D0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CE8942B921232B8F003173D0 /* Board.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
