@@ -4,9 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -147,7 +145,7 @@
                     <navigationItem key="navigationItem" title="Frage" id="aqv-y5-tFI">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="vqI-ba-5bo">
                             <connections>
-                                <segue destination="nHn-md-Kpn" kind="push" id="A0Y-BO-3My"/>
+                                <segue destination="bph-vc-Cqu" kind="show" id="p1G-Uw-bu7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -159,88 +157,20 @@
             </objects>
             <point key="canvasLocation" x="2704.8000000000002" y="865.81709145427294"/>
         </scene>
-        <!--글 등록-->
-        <scene sceneID="V2J-Nc-6z6">
+        <!--Post Frage View Controller-->
+        <scene sceneID="mir-F6-u0E">
             <objects>
-                <viewController id="nHn-md-Kpn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wJd-Qk-YhH">
+                <viewController storyboardIdentifier="PostFrageViewController" id="bph-vc-Cqu" customClass="PostFrageViewController" customModule="Frage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="287-gp-47T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQp-q5-mzU">
-                                <rect key="frame" x="15" y="136" width="35" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="분야" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1y5-yn-t3O">
-                                <rect key="frame" x="15" y="170" width="35" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QkY-GK-yAe">
-                                <rect key="frame" x="65" y="133" width="295" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="HQQ-XS-kMq"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a6u-yQ-ze3">
-                                <rect key="frame" x="15" y="214" width="345" height="234"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o5V-0i-fyr">
-                                <rect key="frame" x="15" y="458" width="150" height="150"/>
-                                <color key="backgroundColor" red="0.8980392157" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="P9M-R8-ntr"/>
-                                    <constraint firstAttribute="width" secondItem="o5V-0i-fyr" secondAttribute="height" multiplier="1:1" id="vje-8z-RFc"/>
-                                </constraints>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J3a-jf-hL1">
-                                <rect key="frame" x="65" y="169" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="64Q-bT-FPp"/>
-                                    <constraint firstAttribute="width" constant="100" id="LH0-dq-h6Y"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="J3a-jf-hL1" firstAttribute="leading" secondItem="QkY-GK-yAe" secondAttribute="leading" id="0fC-pf-UCV"/>
-                            <constraint firstItem="a6u-yQ-ze3" firstAttribute="trailing" secondItem="QkY-GK-yAe" secondAttribute="trailing" id="1Du-37-xul"/>
-                            <constraint firstItem="1y5-yn-t3O" firstAttribute="top" secondItem="DQp-q5-mzU" secondAttribute="bottom" constant="10" id="8RM-1B-z0l"/>
-                            <constraint firstItem="o5V-0i-fyr" firstAttribute="top" secondItem="a6u-yQ-ze3" secondAttribute="bottom" constant="10" id="Ihk-2Q-ga9"/>
-                            <constraint firstItem="7Rq-e4-TXN" firstAttribute="bottom" secondItem="o5V-0i-fyr" secondAttribute="bottom" constant="10" id="LHG-47-huf"/>
-                            <constraint firstItem="1y5-yn-t3O" firstAttribute="leading" secondItem="DQp-q5-mzU" secondAttribute="leading" id="Zby-jc-91A"/>
-                            <constraint firstItem="7Rq-e4-TXN" firstAttribute="trailing" secondItem="QkY-GK-yAe" secondAttribute="trailing" constant="15" id="dIn-CH-Pwt"/>
-                            <constraint firstItem="QkY-GK-yAe" firstAttribute="leading" secondItem="DQp-q5-mzU" secondAttribute="trailing" constant="15" id="f0T-Ff-vok"/>
-                            <constraint firstItem="QkY-GK-yAe" firstAttribute="centerY" secondItem="DQp-q5-mzU" secondAttribute="centerY" id="mEb-Ef-awq"/>
-                            <constraint firstItem="J3a-jf-hL1" firstAttribute="top" secondItem="QkY-GK-yAe" secondAttribute="bottom" constant="6" id="q3G-z6-JK6"/>
-                            <constraint firstItem="DQp-q5-mzU" firstAttribute="top" secondItem="7Rq-e4-TXN" secondAttribute="top" constant="20" id="s2t-Dd-eLe"/>
-                            <constraint firstItem="DQp-q5-mzU" firstAttribute="leading" secondItem="7Rq-e4-TXN" secondAttribute="leading" constant="15" id="ujA-ai-Q0H"/>
-                            <constraint firstItem="a6u-yQ-ze3" firstAttribute="leading" secondItem="DQp-q5-mzU" secondAttribute="leading" id="vvr-Mk-WJd"/>
-                            <constraint firstItem="a6u-yQ-ze3" firstAttribute="top" secondItem="1y5-yn-t3O" secondAttribute="bottom" constant="20" id="wHP-YN-yUs"/>
-                            <constraint firstItem="o5V-0i-fyr" firstAttribute="leading" secondItem="a6u-yQ-ze3" secondAttribute="leading" id="z7V-qF-0sV"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="7Rq-e4-TXN"/>
+                        <viewLayoutGuide key="safeArea" id="waU-hA-fM9"/>
                     </view>
-                    <navigationItem key="navigationItem" title="글 등록" id="OKX-tA-mdj">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="wmO-ag-rrv"/>
-                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Veh-eE-qY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zik-hh-I2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3615" y="863"/>
+            <point key="canvasLocation" x="3511" y="866"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZXr-Eu-TEX">

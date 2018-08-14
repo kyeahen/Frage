@@ -15,7 +15,6 @@
 		2241134721230AA900198C47 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241134621230AA900198C47 /* JoinViewController.swift */; };
 		2241134921230DB800198C47 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241134821230DB800198C47 /* BoardViewController.swift */; };
 		2241134B2123126C00198C47 /* BoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241134A2123126C00198C47 /* BoardTableViewCell.swift */; };
-		2241134D2123138A00198C47 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241134C2123138A00198C47 /* WriteViewController.swift */; };
 		224113512123194000198C47 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224113502123194000198C47 /* MyPageViewController.swift */; };
 		2241135321231BF300198C47 /* UpdateMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241135221231BF300198C47 /* UpdateMyPageViewController.swift */; };
 		2241135521231CB100198C47 /* BoardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241135421231CB100198C47 /* BoardDetailViewController.swift */; };
@@ -24,6 +23,7 @@
 		CEE65BBC212332AA003BC904 /* BoardDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE65BBB212332AA003BC904 /* BoardDetail.storyboard */; };
 		CEE65BBE212338B1003BC904 /* Frage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE65BBD212338B1003BC904 /* Frage.swift */; };
 		CEE65BC0212338D8003BC904 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE65BBF212338D8003BC904 /* Result.swift */; };
+		CEE65BC321234BCA003BC904 /* PostFrageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE65BC221234BCA003BC904 /* PostFrageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,6 @@
 		2241134621230AA900198C47 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		2241134821230DB800198C47 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 		2241134A2123126C00198C47 /* BoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTableViewCell.swift; sourceTree = "<group>"; };
-		2241134C2123138A00198C47 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		224113502123194000198C47 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		2241135221231BF300198C47 /* UpdateMyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMyPageViewController.swift; sourceTree = "<group>"; };
 		2241135421231CB100198C47 /* BoardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		CEE65BBB212332AA003BC904 /* BoardDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BoardDetail.storyboard; sourceTree = "<group>"; };
 		CEE65BBD212338B1003BC904 /* Frage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frage.swift; sourceTree = "<group>"; };
 		CEE65BBF212338D8003BC904 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		CEE65BC221234BCA003BC904 /* PostFrageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFrageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				CE8942B621232B32003173D0 /* MyPage */,
-				CE8942B521232B29003173D0 /* Board */,
+				CE8942B521232B29003173D0 /* Frage */,
 				CE8942B421232B23003173D0 /* Join */,
 				CE8942B321232B03003173D0 /* Login */,
 			);
@@ -157,16 +157,16 @@
 			path = Join;
 			sourceTree = "<group>";
 		};
-		CE8942B521232B29003173D0 /* Board */ = {
+		CE8942B521232B29003173D0 /* Frage */ = {
 			isa = PBXGroup;
 			children = (
+				CEE65BC121234BB4003BC904 /* PostFrage */,
 				CE8942BC21232CBF003173D0 /* Storyboard */,
-				2241134C2123138A00198C47 /* WriteViewController.swift */,
 				2241135421231CB100198C47 /* BoardDetailViewController.swift */,
 				2241134821230DB800198C47 /* BoardViewController.swift */,
 				2241134A2123126C00198C47 /* BoardTableViewCell.swift */,
 			);
-			path = Board;
+			path = Frage;
 			sourceTree = "<group>";
 		};
 		CE8942B621232B32003173D0 /* MyPage */ = {
@@ -194,6 +194,14 @@
 				CEE65BBB212332AA003BC904 /* BoardDetail.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CEE65BC121234BB4003BC904 /* PostFrage */ = {
+			isa = PBXGroup;
+			children = (
+				CEE65BC221234BCA003BC904 /* PostFrageViewController.swift */,
+			);
+			path = PostFrage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2241135321231BF300198C47 /* UpdateMyPageViewController.swift in Sources */,
-				2241134D2123138A00198C47 /* WriteViewController.swift in Sources */,
+				CEE65BC321234BCA003BC904 /* PostFrageViewController.swift in Sources */,
 				2241134B2123126C00198C47 /* BoardTableViewCell.swift in Sources */,
 				224113512123194000198C47 /* MyPageViewController.swift in Sources */,
 				224113352122FEAD00198C47 /* LoginViewController.swift in Sources */,
