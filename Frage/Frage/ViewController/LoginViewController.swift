@@ -8,7 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var idTextField: UITextField!
+    @IBOutlet weak var pwdTextField: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +24,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //MARK: 로그인
+    @IBAction func LoginAction(_ sender: UIButton) {
+        
+    }
+    
+    //MARK: 회원가입
+    @IBAction func JoinAction(_ sender: UIButton) {
+        
 
+    }
+    
+    
 }
 
