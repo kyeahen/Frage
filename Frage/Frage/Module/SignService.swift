@@ -22,13 +22,17 @@ struct SignService: APIService {
             "pwd" : pwd
         ]
         
-        Alamofire.request(URL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: nil).responseData(){ res in
+        Alamofire.request(URL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: nil).responseData() { res in
             switch res.result{
             case .success:
                 if let value = res.result.value{
+                    
                     if let message = JSON(value)["message"].string{
+                        UserDefaults.standard.set(JSON(value)["result"]["idx"].int, forKey: "idx")
+                        
                         if message == "success"{ // 로그인 성공
                             print("성공")
+                            
                             completion("success")
                         }
                         else{ // 로그인 실패
@@ -88,6 +92,6 @@ struct SignService: APIService {
             }
         }
     }
-    
+
     
 }

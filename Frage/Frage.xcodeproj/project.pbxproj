@@ -19,8 +19,13 @@
 		224113512123194000198C47 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224113502123194000198C47 /* MyPageViewController.swift */; };
 		2241135321231BF300198C47 /* UpdateMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241135221231BF300198C47 /* UpdateMyPageViewController.swift */; };
 		2241135521231CB100198C47 /* BoardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241135421231CB100198C47 /* BoardDetailViewController.swift */; };
+		229B921721236DAD00FB6EFE /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B921621236DAD00FB6EFE /* SignIn.swift */; };
+		229B921921236E7800FB6EFE /* SignInData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B921821236E7800FB6EFE /* SignInData.swift */; };
+		229B921B2123762200FB6EFE /* MyPageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B921A2123762200FB6EFE /* MyPageService.swift */; };
+		229B921D212377A300FB6EFE /* MyPageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B921C212377A300FB6EFE /* MyPageData.swift */; };
+		229B921F2123780400FB6EFE /* MyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B921E2123780400FB6EFE /* MyPage.swift */; };
 		22DC270121234DF100D6A254 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC270021234DF100D6A254 /* APIService.swift */; };
-		22DC27032123555000D6A254 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC27022123555000D6A254 /* SignUp.swift */; };
+		22DC27032123555000D6A254 /* SignUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC27022123555000D6A254 /* SignUpData.swift */; };
 		22DC2705212355E500D6A254 /* SignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC2704212355E500D6A254 /* SignService.swift */; };
 		22DC27072123593600D6A254 /* ExtensionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC27062123593600D6A254 /* ExtensionControl.swift */; };
 		CE8942B821232B83003173D0 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8942B721232B83003173D0 /* MyPage.storyboard */; };
@@ -45,8 +50,13 @@
 		224113502123194000198C47 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		2241135221231BF300198C47 /* UpdateMyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMyPageViewController.swift; sourceTree = "<group>"; };
 		2241135421231CB100198C47 /* BoardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailViewController.swift; sourceTree = "<group>"; };
+		229B921621236DAD00FB6EFE /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		229B921821236E7800FB6EFE /* SignInData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInData.swift; sourceTree = "<group>"; };
+		229B921A2123762200FB6EFE /* MyPageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageService.swift; sourceTree = "<group>"; };
+		229B921C212377A300FB6EFE /* MyPageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageData.swift; sourceTree = "<group>"; };
+		229B921E2123780400FB6EFE /* MyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPage.swift; sourceTree = "<group>"; };
 		22DC270021234DF100D6A254 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		22DC27022123555000D6A254 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		22DC27022123555000D6A254 /* SignUpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpData.swift; sourceTree = "<group>"; };
 		22DC2704212355E500D6A254 /* SignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignService.swift; sourceTree = "<group>"; };
 		22DC27062123593600D6A254 /* ExtensionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionControl.swift; sourceTree = "<group>"; };
 		234E2BB16CCBDF5CF00C8E22 /* Pods-Frage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frage.release.xcconfig"; path = "Pods/Target Support Files/Pods-Frage/Pods-Frage.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,7 +172,11 @@
 			isa = PBXGroup;
 			children = (
 				CEE65BBD212338B1003BC904 /* Frage.swift */,
-				22DC27022123555000D6A254 /* SignUp.swift */,
+				22DC27022123555000D6A254 /* SignUpData.swift */,
+				229B921621236DAD00FB6EFE /* SignIn.swift */,
+				229B921821236E7800FB6EFE /* SignInData.swift */,
+				229B921C212377A300FB6EFE /* MyPageData.swift */,
+				229B921E2123780400FB6EFE /* MyPage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +187,7 @@
 				CEE65BBF212338D8003BC904 /* Result.swift */,
 				22DC270021234DF100D6A254 /* APIService.swift */,
 				22DC2704212355E500D6A254 /* SignService.swift */,
+				229B921A2123762200FB6EFE /* MyPageService.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -367,14 +382,19 @@
 			files = (
 				22DC2705212355E500D6A254 /* SignService.swift in Sources */,
 				2241135321231BF300198C47 /* UpdateMyPageViewController.swift in Sources */,
+				229B921721236DAD00FB6EFE /* SignIn.swift in Sources */,
 				CEE65BC321234BCA003BC904 /* PostFrageViewController.swift in Sources */,
 				2241134B2123126C00198C47 /* BoardTableViewCell.swift in Sources */,
 				224113512123194000198C47 /* MyPageViewController.swift in Sources */,
-				22DC27032123555000D6A254 /* SignUp.swift in Sources */,
+				22DC27032123555000D6A254 /* SignUpData.swift in Sources */,
+				229B921921236E7800FB6EFE /* SignInData.swift in Sources */,
 				224113352122FEAD00198C47 /* LoginViewController.swift in Sources */,
 				CEE65BBE212338B1003BC904 /* Frage.swift in Sources */,
+				229B921F2123780400FB6EFE /* MyPage.swift in Sources */,
 				2241135521231CB100198C47 /* BoardDetailViewController.swift in Sources */,
 				22DC27072123593600D6A254 /* ExtensionControl.swift in Sources */,
+				229B921D212377A300FB6EFE /* MyPageData.swift in Sources */,
+				229B921B2123762200FB6EFE /* MyPageService.swift in Sources */,
 				2241134721230AA900198C47 /* JoinViewController.swift in Sources */,
 				224113332122FEAD00198C47 /* AppDelegate.swift in Sources */,
 				2241134921230DB800198C47 /* BoardViewController.swift in Sources */,

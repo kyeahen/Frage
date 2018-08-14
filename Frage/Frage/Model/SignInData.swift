@@ -1,5 +1,5 @@
 //
-//  Join.swift
+//  SignInData.swift
 //  Frage
 //
 //  Created by 김예은 on 2018. 8. 15..
@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct SignUp: Codable {
-
+struct SignInData: Codable {
     let status: Bool
     let message: String
+    let result: SignIn
 }
