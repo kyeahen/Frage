@@ -19,7 +19,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Frx-bF-n3F">
                                 <rect key="frame" x="0.0" y="116" width="375" height="502"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.88" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BoardTableViewCell" rowHeight="259" id="Lbk-V8-PsK" customClass="BoardTableViewCell" customModule="Frage" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="259"/>
@@ -133,7 +133,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.88" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="MHe-bt-Ufc" firstAttribute="bottom" secondItem="Frx-bF-n3F" secondAttribute="bottom" id="3W7-ha-gQ9"/>
                             <constraint firstItem="Frx-bF-n3F" firstAttribute="top" secondItem="MHe-bt-Ufc" secondAttribute="top" id="dPh-zT-A44"/>
@@ -157,20 +157,38 @@
             </objects>
             <point key="canvasLocation" x="2704.8000000000002" y="865.81709145427294"/>
         </scene>
-        <!--Post Frage View Controller-->
+        <!--Frage-->
         <scene sceneID="mir-F6-u0E">
             <objects>
                 <viewController storyboardIdentifier="PostFrageViewController" id="bph-vc-Cqu" customClass="PostFrageViewController" customModule="Frage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="287-gp-47T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8fu-ld-vaT">
+                                <rect key="frame" x="16" y="140" width="343" height="430"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="waU-hA-fM9" firstAttribute="bottom" secondItem="8fu-ld-vaT" secondAttribute="bottom" constant="48" id="5WV-S5-arH"/>
+                            <constraint firstItem="waU-hA-fM9" firstAttribute="trailing" secondItem="8fu-ld-vaT" secondAttribute="trailing" constant="16" id="J3F-V0-1gB"/>
+                            <constraint firstItem="8fu-ld-vaT" firstAttribute="leading" secondItem="waU-hA-fM9" secondAttribute="leading" constant="16" id="PIg-Ft-dR0"/>
+                            <constraint firstItem="8fu-ld-vaT" firstAttribute="top" secondItem="waU-hA-fM9" secondAttribute="top" constant="24" id="niz-7q-a0p"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="waU-hA-fM9"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Frage" id="lgP-f5-BoA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="LiW-JP-bYN"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zik-hh-I2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3511" y="866"/>
+            <point key="canvasLocation" x="3509.5999999999999" y="865.81709145427294"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZXr-Eu-TEX">
