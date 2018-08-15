@@ -24,6 +24,13 @@
 		229B921B2123762200FB6EFE /* MyPageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B921A2123762200FB6EFE /* MyPageService.swift */; };
 		229B921D212377A300FB6EFE /* MyPageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B921C212377A300FB6EFE /* MyPageData.swift */; };
 		229B921F2123780400FB6EFE /* MyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B921E2123780400FB6EFE /* MyPage.swift */; };
+		229B92212123E0D100FB6EFE /* BoardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B92202123E0D100FB6EFE /* BoardService.swift */; };
+		229B92232123E10500FB6EFE /* BoardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B92222123E10500FB6EFE /* BoardData.swift */; };
+		229B92252123E13400FB6EFE /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B92242123E13400FB6EFE /* Board.swift */; };
+		229B92272123FE8D00FB6EFE /* BoardDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B92262123FE8D00FB6EFE /* BoardDetailTableViewCell.swift */; };
+		229B92292124048B00FB6EFE /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B92282124048B00FB6EFE /* CommentTableViewCell.swift */; };
+		229B922B2124092B00FB6EFE /* CommentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B922A2124092B00FB6EFE /* CommentData.swift */; };
+		229B922D2124093500FB6EFE /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B922C2124093500FB6EFE /* Comment.swift */; };
 		22DC270121234DF100D6A254 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC270021234DF100D6A254 /* APIService.swift */; };
 		22DC27032123555000D6A254 /* SignUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC27022123555000D6A254 /* SignUpData.swift */; };
 		22DC2705212355E500D6A254 /* SignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC2704212355E500D6A254 /* SignService.swift */; };
@@ -55,6 +62,13 @@
 		229B921A2123762200FB6EFE /* MyPageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageService.swift; sourceTree = "<group>"; };
 		229B921C212377A300FB6EFE /* MyPageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageData.swift; sourceTree = "<group>"; };
 		229B921E2123780400FB6EFE /* MyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPage.swift; sourceTree = "<group>"; };
+		229B92202123E0D100FB6EFE /* BoardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardService.swift; sourceTree = "<group>"; };
+		229B92222123E10500FB6EFE /* BoardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardData.swift; sourceTree = "<group>"; };
+		229B92242123E13400FB6EFE /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		229B92262123FE8D00FB6EFE /* BoardDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailTableViewCell.swift; sourceTree = "<group>"; };
+		229B92282124048B00FB6EFE /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		229B922A2124092B00FB6EFE /* CommentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentData.swift; sourceTree = "<group>"; };
+		229B922C2124093500FB6EFE /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		22DC270021234DF100D6A254 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		22DC27022123555000D6A254 /* SignUpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpData.swift; sourceTree = "<group>"; };
 		22DC2704212355E500D6A254 /* SignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignService.swift; sourceTree = "<group>"; };
@@ -177,6 +191,10 @@
 				229B921821236E7800FB6EFE /* SignInData.swift */,
 				229B921C212377A300FB6EFE /* MyPageData.swift */,
 				229B921E2123780400FB6EFE /* MyPage.swift */,
+				229B92222123E10500FB6EFE /* BoardData.swift */,
+				229B92242123E13400FB6EFE /* Board.swift */,
+				229B922A2124092B00FB6EFE /* CommentData.swift */,
+				229B922C2124093500FB6EFE /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +206,7 @@
 				22DC270021234DF100D6A254 /* APIService.swift */,
 				22DC2704212355E500D6A254 /* SignService.swift */,
 				229B921A2123762200FB6EFE /* MyPageService.swift */,
+				229B92202123E0D100FB6EFE /* BoardService.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -216,6 +235,8 @@
 				2241135421231CB100198C47 /* BoardDetailViewController.swift */,
 				2241134821230DB800198C47 /* BoardViewController.swift */,
 				2241134A2123126C00198C47 /* BoardTableViewCell.swift */,
+				229B92262123FE8D00FB6EFE /* BoardDetailTableViewCell.swift */,
+				229B92282124048B00FB6EFE /* CommentTableViewCell.swift */,
 			);
 			path = Frage;
 			sourceTree = "<group>";
@@ -382,9 +403,13 @@
 			files = (
 				22DC2705212355E500D6A254 /* SignService.swift in Sources */,
 				2241135321231BF300198C47 /* UpdateMyPageViewController.swift in Sources */,
+				229B92292124048B00FB6EFE /* CommentTableViewCell.swift in Sources */,
+				229B92232123E10500FB6EFE /* BoardData.swift in Sources */,
+				229B92252123E13400FB6EFE /* Board.swift in Sources */,
 				229B921721236DAD00FB6EFE /* SignIn.swift in Sources */,
 				CEE65BC321234BCA003BC904 /* PostFrageViewController.swift in Sources */,
 				2241134B2123126C00198C47 /* BoardTableViewCell.swift in Sources */,
+				229B92272123FE8D00FB6EFE /* BoardDetailTableViewCell.swift in Sources */,
 				224113512123194000198C47 /* MyPageViewController.swift in Sources */,
 				22DC27032123555000D6A254 /* SignUpData.swift in Sources */,
 				229B921921236E7800FB6EFE /* SignInData.swift in Sources */,
@@ -397,9 +422,12 @@
 				229B921B2123762200FB6EFE /* MyPageService.swift in Sources */,
 				2241134721230AA900198C47 /* JoinViewController.swift in Sources */,
 				224113332122FEAD00198C47 /* AppDelegate.swift in Sources */,
+				229B922B2124092B00FB6EFE /* CommentData.swift in Sources */,
 				2241134921230DB800198C47 /* BoardViewController.swift in Sources */,
 				22DC270121234DF100D6A254 /* APIService.swift in Sources */,
 				CEE65BC0212338D8003BC904 /* Result.swift in Sources */,
+				229B922D2124093500FB6EFE /* Comment.swift in Sources */,
+				229B92212123E0D100FB6EFE /* BoardService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

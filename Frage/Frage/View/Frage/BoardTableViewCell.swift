@@ -13,6 +13,8 @@ class BoardTableViewCell: UITableViewCell {
     @IBOutlet weak var authorNameLabel: UILabel!
     @IBOutlet weak var authorTypeLabel: UILabel!
     @IBOutlet weak var contentsLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
     
     public func updateViews(with frage: Frage) {
         authorNameLabel.text = frage.author.name
