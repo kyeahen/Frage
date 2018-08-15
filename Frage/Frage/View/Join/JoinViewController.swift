@@ -23,6 +23,9 @@ class JoinViewController: UIViewController, APIService{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.white
+        self.navigationItem.backBarButtonItem?.tintColor = UIColor.white
+        
         initPicker()
         
         imageView.layer.masksToBounds = true
