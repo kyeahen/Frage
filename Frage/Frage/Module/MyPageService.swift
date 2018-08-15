@@ -31,13 +31,16 @@ struct MyPageService: APIService {
                         print("계정설정 진입")
                         
                         let myPageData = try decoder.decode(MyPageData.self, from: value)
-                                                    
+                        
+         
                         if myPageData.status == true {
+                            print("dd")
                             let message = JSON(value)["message"].string
+                            
 
                             if myPageData.message == "success" {
                                 print("계정 설정 성공")
-                                completion(myPageData.result)
+                                completion(myPageData.result[0])
                             }
                             else {
                                 print("계정 설정 실패")
@@ -49,7 +52,7 @@ struct MyPageService: APIService {
                         }
                         
                     } catch {
-                        print("서버 에러")
+                        print("1서버 에러")
                     }
                     
                 }

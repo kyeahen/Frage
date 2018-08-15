@@ -14,10 +14,14 @@ class MyPageViewController: UIViewController {
     @IBOutlet weak var idTextField: UILabel!
     @IBOutlet weak var partTextField: UILabel!
     @IBOutlet weak var introTextView: UITextView!
+    @IBOutlet weak var mimageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        mimageView.layer.masksToBounds = true
+        mimageView.layer.cornerRadius = mimageView.layer.frame.width/2
+        
         myPageInit()
         // Do any additional setup after loading the view.
     }

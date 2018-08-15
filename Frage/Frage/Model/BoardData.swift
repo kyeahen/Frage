@@ -1,5 +1,5 @@
 //
-//  MyPageData.swift
+//  BoardData.swift
 //  Frage
 //
 //  Created by 김예은 on 2018. 8. 15..
@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct MyPageData: Codable {
-
+struct BoardData: Codable {
+    
     let status: Bool
     let message: String
-    let result: [MyPage]
+    let result: [Board]
 }

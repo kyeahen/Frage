@@ -41,8 +41,8 @@ class LoginViewController: UIViewController {
     func login() {
         SignService.login(id: gsno(idTextField.text), pwd: gsno(pwdTextField.text)) { (message) in
             if message == "success"{
-                let boardNaviVC = UIStoryboard(name: "Board", bundle: nil).instantiateViewController(withIdentifier: "BoardNaviVC")
-                self.present(boardNaviVC, animated: true, completion: nil)
+                let tabVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tabVC")
+                self.present(tabVC, animated: true, completion: nil)
             }
             else {
                 let alertView = UIAlertController(title: "로그인 실패", message: "다시 시도해주세요.", preferredStyle: .alert)

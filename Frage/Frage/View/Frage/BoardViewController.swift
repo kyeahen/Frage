@@ -8,89 +8,98 @@
 
 import UIKit
 
-class BoardViewController: UIViewController {
+class BoardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     
     @IBOutlet weak var tableView: UITableView!
-}
+    var boards: [Board] = [Board]()
 
-// MARK: - View Life Cycle
-extension BoardViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let refreshControl = UIRefreshControl(frame: CGRect.zero)
-        refreshControl.addTarget(self, action: #selector(handleRefreshControl), for: .valueChanged)
-        tableView.refreshControl = refreshControl
-    }
-    
-    @objc
-    public func handleRefreshControl() {
-        refreshFrage { [weak self] in
-            guard let `self` = self else {
-                return
-            }
-            self.tableView.refreshControl?.endRefreshing()
-        }
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
+//        let refreshControl = UIRefreshControl(frame: CGRect.zero)
+//        refreshControl.addTarget(self, action: #selector(handleRefreshControl), for: .valueChanged)
+//        tableView.refreshControl = refreshControl
+        
+        boardInit()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        refreshFrage(completion: nil)
+        boardInit()
     }
-}
-
-// MARK: - Method
-extension BoardViewController {
-    
-    private func showFrageDetail() {
-        guard let controller = UIStoryboard(name: "BoardDetail", bundle: nil).instantiateInitialViewController() else {
-            return
-        }
-        
-        self.navigationController?.pushViewController(controller, animated: true)
-    }
-    
-    private func refreshFrage(completion: (() -> Void)?) {
-        FrageStore.shared.getTestFrages { [weak self] in
-            guard let `self` = self else {
-                return
-            }
-            self.tableView.reloadData()
-            completion?()
-        }
-    }
-}
-
-// MARK: - Table View Data Source
-extension BoardViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return FrageStore.shared.frages.count
+        return boards.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let frage = FrageStore.shared.frages[indexPath.row]
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "BoardTableViewCell", for: indexPath) as? BoardTableViewCell else {
-            return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BoardTableViewCell", for: indexPath) as! BoardTableViewCell
+        
+        cell.authorNameLabel.text = boards[indexPath.row].title
+        cell.authorTypeLabel.text = boards[indexPath.row].major
+        cell.contentsLabel.text = boards[indexPath.row].content
+        cell.dateLabel.text = boards[indexPath.row].date
+
+        if boards[indexPath.row].category == 0 {
+            cell.categoryLabel.text = "Web"
         }
-        
-        cell.updateViews(with: frage)
+        else if boards[indexPath.row].category == 1 {
+            cell.categoryLabel.text = "App"
+        }
+        else {
+            cell.categoryLabel.text = "Server"
+        }
         
         return cell
     }
-}
-
-// MARK: - Table View Delegate
-extension BoardViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let datailVC = UIStoryboard(name: "BoardDetail", bundle: nil).instantiateViewController(withIdentifier: "BoardDetailViewController") as! BoardDetailViewController
+        datailVC.tit = boards[indexPath.row].title
+        
+        if boards[indexPath.row].category == 0 {
+            datailVC.part = "Web"
+        }
+        else if boards[indexPath.row].category == 1 {
+            datailVC.part = "App"
+        }
+        else {
+            datailVC.part = "Server"
+        }
+        
+        datailVC.part = boards[indexPath.row].major
+        datailVC.time = boards[indexPath.row].date
+        datailVC.name = boards[indexPath.row].name
+        datailVC.content = boards[indexPath.row].content
+        datailVC.img = boards[indexPath.row].frage_image
+        datailVC.b_idx = String(boards[indexPath.row].board_idx)
+        self.navigationController?.pushViewController(datailVC, animated: true)
+        
     }
+    
+    //MARK : 게시판 조회 서버 통신
+    func boardInit()  {
+        BoardService.boardInit { (boardData) in
+            
+            self.boards = boardData
+            self.tableView.reloadData()
+            
+        }
+    }
+
 }
+
+
+
