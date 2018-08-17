@@ -16,9 +16,4 @@ class BoardTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
     
-    public func updateViews(with frage: Frage) {
-        authorNameLabel.text = frage.author.name
-        authorTypeLabel.text = frage.author.authorType
-        contentsLabel.text = frage.contents
-    }
 }

@@ -55,7 +55,7 @@
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3g-g7-sc3" userLabel="Bottom Fill View">
                                                     <rect key="frame" x="0.0" y="122" width="375" height="8"/>
-                                                    <color key="backgroundColor" white="0.8800642730496453" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" red="0.8980392157" green="0.70588235290000001" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="8" id="Nlw-ji-OBU"/>
                                                     </constraints>
@@ -128,7 +128,7 @@
         <!--Frage-->
         <scene sceneID="mir-F6-u0E">
             <objects>
-                <viewController storyboardIdentifier="PostFrageViewController" id="bph-vc-Cqu" customClass="PostFrageViewController" customModule="Frage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BoardWriteViewController" id="bph-vc-Cqu" customClass="BoardWriteViewController" customModule="Frage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="287-gp-47T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,9 +151,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5gt-t4-lJA">
-                                <rect key="frame" x="10" y="467" width="120" height="120"/>
-                                <color key="backgroundColor" red="0.92156862750000001" green="0.3294117647" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1024" translatesAutoresizingMaskIntoConstraints="NO" id="5gt-t4-lJA">
+                                <rect key="frame" x="10" y="483" width="120" height="120"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="4HN-Cl-ap0"/>
@@ -166,14 +165,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="waU-hA-fM9" firstAttribute="bottom" secondItem="5gt-t4-lJA" secondAttribute="bottom" constant="31" id="1hm-bR-sNB"/>
+                            <constraint firstItem="waU-hA-fM9" firstAttribute="bottom" secondItem="5gt-t4-lJA" secondAttribute="bottom" constant="15" id="1hm-bR-sNB"/>
                             <constraint firstItem="Z9U-dI-xjz" firstAttribute="top" secondItem="waU-hA-fM9" secondAttribute="top" constant="30" id="5M5-3I-stx"/>
-                            <constraint firstItem="5gt-t4-lJA" firstAttribute="top" secondItem="q9z-Gz-Lvb" secondAttribute="bottom" constant="10" id="5iC-Sl-XRt"/>
                             <constraint firstItem="q9z-Gz-Lvb" firstAttribute="top" secondItem="07O-BB-xpT" secondAttribute="bottom" constant="10" id="Cbb-Fl-yzK"/>
                             <constraint firstItem="07O-BB-xpT" firstAttribute="leading" secondItem="Z9U-dI-xjz" secondAttribute="leading" id="G8l-YQ-vNg"/>
                             <constraint firstItem="07O-BB-xpT" firstAttribute="trailing" secondItem="Z9U-dI-xjz" secondAttribute="trailing" id="IYg-bD-lqW"/>
                             <constraint firstItem="5gt-t4-lJA" firstAttribute="leading" secondItem="q9z-Gz-Lvb" secondAttribute="leading" id="Msb-H8-jyj"/>
                             <constraint firstItem="q9z-Gz-Lvb" firstAttribute="trailing" secondItem="07O-BB-xpT" secondAttribute="trailing" id="Rq7-Oi-r7j"/>
+                            <constraint firstItem="5gt-t4-lJA" firstAttribute="top" secondItem="q9z-Gz-Lvb" secondAttribute="bottom" constant="26" id="WQZ-Lp-0GR"/>
                             <constraint firstItem="07O-BB-xpT" firstAttribute="top" secondItem="Z9U-dI-xjz" secondAttribute="bottom" constant="10" id="XwK-vU-Sy9"/>
                             <constraint firstItem="q9z-Gz-Lvb" firstAttribute="leading" secondItem="07O-BB-xpT" secondAttribute="leading" id="nVt-GO-6kk"/>
                             <constraint firstItem="Z9U-dI-xjz" firstAttribute="leading" secondItem="waU-hA-fM9" secondAttribute="leading" constant="10" id="o2t-J6-NcR"/>
@@ -234,4 +233,7 @@
             <point key="canvasLocation" x="1810" y="866"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1024" width="1024" height="1024"/>
+    </resources>
 </document>

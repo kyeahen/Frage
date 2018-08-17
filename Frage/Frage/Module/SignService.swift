@@ -36,7 +36,7 @@ struct SignService: APIService {
                             completion("success")
                         }
                         else{ // 로그인 실패
-                            print("로그인 실패 : "+message)
+                            print("로그인 실패 : " + message)
                             
                             completion("failure")
                         }

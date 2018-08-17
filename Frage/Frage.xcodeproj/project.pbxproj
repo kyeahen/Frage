@@ -38,9 +38,7 @@
 		CE8942B821232B83003173D0 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8942B721232B83003173D0 /* MyPage.storyboard */; };
 		CE8942BA21232B8F003173D0 /* Board.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8942B921232B8F003173D0 /* Board.storyboard */; };
 		CEE65BBC212332AA003BC904 /* BoardDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE65BBB212332AA003BC904 /* BoardDetail.storyboard */; };
-		CEE65BBE212338B1003BC904 /* Frage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE65BBD212338B1003BC904 /* Frage.swift */; };
-		CEE65BC0212338D8003BC904 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE65BBF212338D8003BC904 /* Result.swift */; };
-		CEE65BC321234BCA003BC904 /* PostFrageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE65BC221234BCA003BC904 /* PostFrageViewController.swift */; };
+		CEE65BC321234BCA003BC904 /* BoardWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE65BC221234BCA003BC904 /* BoardWriteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,9 +77,7 @@
 		CE8942B721232B83003173D0 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		CE8942B921232B8F003173D0 /* Board.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Board.storyboard; sourceTree = "<group>"; };
 		CEE65BBB212332AA003BC904 /* BoardDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BoardDetail.storyboard; sourceTree = "<group>"; };
-		CEE65BBD212338B1003BC904 /* Frage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frage.swift; sourceTree = "<group>"; };
-		CEE65BBF212338D8003BC904 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		CEE65BC221234BCA003BC904 /* PostFrageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFrageViewController.swift; sourceTree = "<group>"; };
+		CEE65BC221234BCA003BC904 /* BoardWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardWriteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				CE8942B621232B32003173D0 /* MyPage */,
-				CE8942B521232B29003173D0 /* Frage */,
+				CE8942B521232B29003173D0 /* Board */,
 				CE8942B421232B23003173D0 /* Join */,
 				CE8942B321232B03003173D0 /* Login */,
 			);
@@ -185,7 +181,6 @@
 		CE8942B121232AE6003173D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CEE65BBD212338B1003BC904 /* Frage.swift */,
 				22DC27022123555000D6A254 /* SignUpData.swift */,
 				229B921621236DAD00FB6EFE /* SignIn.swift */,
 				229B921821236E7800FB6EFE /* SignInData.swift */,
@@ -202,7 +197,6 @@
 		CE8942B221232AEA003173D0 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				CEE65BBF212338D8003BC904 /* Result.swift */,
 				22DC270021234DF100D6A254 /* APIService.swift */,
 				22DC2704212355E500D6A254 /* SignService.swift */,
 				229B921A2123762200FB6EFE /* MyPageService.swift */,
@@ -227,18 +221,18 @@
 			path = Join;
 			sourceTree = "<group>";
 		};
-		CE8942B521232B29003173D0 /* Frage */ = {
+		CE8942B521232B29003173D0 /* Board */ = {
 			isa = PBXGroup;
 			children = (
-				CEE65BC121234BB4003BC904 /* PostFrage */,
 				CE8942BC21232CBF003173D0 /* Storyboard */,
+				CEE65BC221234BCA003BC904 /* BoardWriteViewController.swift */,
 				2241135421231CB100198C47 /* BoardDetailViewController.swift */,
 				2241134821230DB800198C47 /* BoardViewController.swift */,
 				2241134A2123126C00198C47 /* BoardTableViewCell.swift */,
 				229B92262123FE8D00FB6EFE /* BoardDetailTableViewCell.swift */,
 				229B92282124048B00FB6EFE /* CommentTableViewCell.swift */,
 			);
-			path = Frage;
+			path = Board;
 			sourceTree = "<group>";
 		};
 		CE8942B621232B32003173D0 /* MyPage */ = {
@@ -266,14 +260,6 @@
 				CEE65BBB212332AA003BC904 /* BoardDetail.storyboard */,
 			);
 			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		CEE65BC121234BB4003BC904 /* PostFrage */ = {
-			isa = PBXGroup;
-			children = (
-				CEE65BC221234BCA003BC904 /* PostFrageViewController.swift */,
-			);
-			path = PostFrage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,14 +393,13 @@
 				229B92232123E10500FB6EFE /* BoardData.swift in Sources */,
 				229B92252123E13400FB6EFE /* Board.swift in Sources */,
 				229B921721236DAD00FB6EFE /* SignIn.swift in Sources */,
-				CEE65BC321234BCA003BC904 /* PostFrageViewController.swift in Sources */,
+				CEE65BC321234BCA003BC904 /* BoardWriteViewController.swift in Sources */,
 				2241134B2123126C00198C47 /* BoardTableViewCell.swift in Sources */,
 				229B92272123FE8D00FB6EFE /* BoardDetailTableViewCell.swift in Sources */,
 				224113512123194000198C47 /* MyPageViewController.swift in Sources */,
 				22DC27032123555000D6A254 /* SignUpData.swift in Sources */,
 				229B921921236E7800FB6EFE /* SignInData.swift in Sources */,
 				224113352122FEAD00198C47 /* LoginViewController.swift in Sources */,
-				CEE65BBE212338B1003BC904 /* Frage.swift in Sources */,
 				229B921F2123780400FB6EFE /* MyPage.swift in Sources */,
 				2241135521231CB100198C47 /* BoardDetailViewController.swift in Sources */,
 				22DC27072123593600D6A254 /* ExtensionControl.swift in Sources */,
@@ -425,7 +410,6 @@
 				229B922B2124092B00FB6EFE /* CommentData.swift in Sources */,
 				2241134921230DB800198C47 /* BoardViewController.swift in Sources */,
 				22DC270121234DF100D6A254 /* APIService.swift in Sources */,
-				CEE65BC0212338D8003BC904 /* Result.swift in Sources */,
 				229B922D2124093500FB6EFE /* Comment.swift in Sources */,
 				229B92212123E0D100FB6EFE /* BoardService.swift in Sources */,
 			);

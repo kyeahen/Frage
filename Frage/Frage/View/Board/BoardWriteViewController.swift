@@ -1,6 +1,6 @@
 //
-//  PostFrageViewController.swift
-//  Frage
+//  BoardWriteViewController.swift
+//  Board
 //
 //  Created by Daigeun Sohn on 15/08/2018.
 //  Copyright © 2018 yeen. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PostFrageViewController: UIViewController {
+class BoardWriteViewController: UIViewController {
     
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var categotyTextField: UITextField!
@@ -64,7 +64,7 @@ class PostFrageViewController: UIViewController {
 
 }
 
-extension PostFrageViewController : UIPickerViewDelegate, UIPickerViewDataSource {
+extension BoardWriteViewController : UIPickerViewDelegate, UIPickerViewDataSource {
     
     //UIPickerViewDelegate
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -157,7 +157,7 @@ extension PostFrageViewController : UIPickerViewDelegate, UIPickerViewDataSource
 }
 
 // MARK: 이미지 첨부
-extension PostFrageViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension BoardWriteViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     // Method
     @objc func openGallery() {
