@@ -28,13 +28,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cuh-9R-eHs">
-                                <rect key="frame" x="62.5" y="431.5" width="250" height="30"/>
+                                <rect key="frame" x="62.5" y="421.5" width="250" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Low-w5-Krk">
-                                <rect key="frame" x="63" y="491.5" width="250" height="30"/>
+                                <rect key="frame" x="63" y="481.5" width="250" height="30"/>
                                 <color key="backgroundColor" red="0.92156862745098034" green="0.32941176470588235" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="로그인">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -44,10 +44,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdz-2P-inw">
-                                <rect key="frame" x="74" y="531.5" width="228" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="228" id="9w2-mY-d0U"/>
-                                </constraints>
+                                <rect key="frame" x="74" y="521.5" width="228" height="30"/>
                                 <state key="normal" title="아직 회원이 아니신가요? 회원가입하기">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -68,14 +65,14 @@
                             <constraint firstItem="Cuh-9R-eHs" firstAttribute="leading" secondItem="hTt-hF-dvs" secondAttribute="leading" id="60d-Ec-raE"/>
                             <constraint firstItem="hTt-hF-dvs" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ByN-YT-Rz9"/>
                             <constraint firstItem="hTt-hF-dvs" firstAttribute="top" secondItem="L7v-i6-uze" secondAttribute="bottom" constant="40" id="Fd4-Sg-BtW"/>
-                            <constraint firstItem="Vdz-2P-inw" firstAttribute="centerX" secondItem="Low-w5-Krk" secondAttribute="centerX" id="Fdx-Wq-zRq"/>
                             <constraint firstItem="hTt-hF-dvs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Rta-Z7-giZ"/>
                             <constraint firstItem="Cuh-9R-eHs" firstAttribute="trailing" secondItem="hTt-hF-dvs" secondAttribute="trailing" id="ZAD-wS-kHF"/>
                             <constraint firstItem="Low-w5-Krk" firstAttribute="leading" secondItem="Cuh-9R-eHs" secondAttribute="leading" id="eKz-7H-A6K"/>
                             <constraint firstItem="Vdz-2P-inw" firstAttribute="top" secondItem="Low-w5-Krk" secondAttribute="bottom" constant="10" id="hhg-Zu-DFH"/>
+                            <constraint firstItem="Vdz-2P-inw" firstAttribute="centerX" secondItem="Low-w5-Krk" secondAttribute="centerX" id="pc9-q6-2GF"/>
                             <constraint firstItem="Low-w5-Krk" firstAttribute="trailing" secondItem="Cuh-9R-eHs" secondAttribute="trailing" id="rbP-we-VpX"/>
                             <constraint firstItem="L7v-i6-uze" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="t1m-PA-deh"/>
-                            <constraint firstItem="Cuh-9R-eHs" firstAttribute="top" secondItem="hTt-hF-dvs" secondAttribute="bottom" constant="25" id="u2Y-lF-JWR"/>
+                            <constraint firstItem="Cuh-9R-eHs" firstAttribute="top" secondItem="hTt-hF-dvs" secondAttribute="bottom" constant="15" id="u2Y-lF-JWR"/>
                             <constraint firstItem="Low-w5-Krk" firstAttribute="top" secondItem="Cuh-9R-eHs" secondAttribute="bottom" constant="30" id="wBJ-OT-oiw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

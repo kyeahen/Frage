@@ -7,8 +7,6 @@ target 'Frage' do
 
   # Pods for Frage
   pod 'Alamofire'
-  pod 'ObjectMapper'
   pod 'SwiftyJSON'
   pod 'Kingfisher'
-  pod 'Moya'
 end
