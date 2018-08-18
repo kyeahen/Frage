@@ -55,7 +55,7 @@
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3g-g7-sc3" userLabel="Bottom Fill View">
                                                     <rect key="frame" x="0.0" y="122" width="375" height="8"/>
-                                                    <color key="backgroundColor" red="0.8980392157" green="0.70588235290000001" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="8" id="Nlw-ji-OBU"/>
                                                     </constraints>
