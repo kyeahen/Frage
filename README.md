@@ -6,6 +6,8 @@
 
 ## [ About ]
 
+![Frage](https://github.com/kyeahen/Frage/blob/master/Frage/Frage/Asset/Assets.xcassets/AppIcon.appiconset/60%403x.png)
+    
 Frage는 ‘**질문**’이라는 의미입니다. <br>
 저희는 개발자에게 가장 필요한 것은 협업하는 과정에서의 소통이라고 생각했습니다. 
 
